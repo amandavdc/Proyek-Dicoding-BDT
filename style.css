@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Pangolin&display=swap");
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pangolin', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0; 
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #EB455F;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FCFFE7;
+}
+
+nav a:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+aside {
+  flex: 1;
+}
+
+h2 {
+  color: #EB455F;
+}
+
+h3 {
+  color: #EB455F;
+}
+
+#content {
+  flex: 5;
+   
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+title {
+  padding: 0px;
+  }
+
+.section {
+    color: #000000;
+    display: inline;
+    padding: 1px 0px 10px;
+    text-align: center;
+  }
+
+footer {
+    color: #F0F0F0;
+    background-color: #3C486B;
+    padding: 0px 0px 10px;
+    text-align: center;
+  }
+  
+.jumbotron {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #FCFFE7;
+  text-align: center;
+  color: #EB455F;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 6px;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+  
+.bg-pinkish {
+  margin-top: 30px;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  background-color: #1b2430;
+  color: #faf3e3;
+}
+
+.social-ul {
+  display: flex;
+  color: #faf3e3;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-ul a {
+  border-radius: 50%;
+  border: 3px solid #faf3e3;
+  color: #faf3e3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
